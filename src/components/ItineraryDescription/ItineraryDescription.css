@@ -1,0 +1,85 @@
+.list {
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	float: left;
+}
+
+.list .list_item {
+	float: left;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.list .list_item .list_time {
+	color: #eb4335;
+	width: 5%;
+	text-align: center;
+	font-weight: bold;
+}
+
+.list .list_item .list_desc {
+  width: 75%;
+  border-bottom: 1px solid #9E9E9E;
+  font-size: 15px;
+  line-height: 22px;
+  padding: 1em 0em 1em 1em;
+  position: relative;
+}
+
+.list .list_item .list_desc .border {
+	background: #9E9E9E;
+	width: 3px;
+	position: absolute;
+	top: 0;
+	bottom: -1px;
+	left: -8%;
+}
+
+.list .list_item .list_desc .border::after {
+  content: '';
+  background: #616161;
+  border: 5px solid #9E9E9E;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  margin-top: -9px;
+  left: -7px;
+  width: 8px;
+  height: 8px;
+}
+
+.list .list_item:last-of-type .list_desc {
+	border-bottom: none;
+}
+
+.list .list_item:last-of-type .list_desc .border::before {
+  content: '';
+  background: #9E9E9E;
+  border-radius: 50%;
+  height: 9px;
+  width: 9px;
+  position: absolute;
+  bottom: -8px;
+  left: -3px;
+}
+
+.list .list_item:first-of-type .list_desc {
+	/* border-bottom: none; */
+}
+
+.list .list_item:first-of-type .list_desc .border::before {
+  content: '';
+  background: #9E9E9E;
+  border-radius: 50%;
+  height: 9px;
+  width: 9px;
+  position: absolute;
+  top: -8px;
+  left: -3px;
+}
+
+.duration {
+	color: #a2a2a2;
+}

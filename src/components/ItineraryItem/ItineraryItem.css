@@ -1,0 +1,39 @@
+.columnContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.columnContainer p {
+  margin: 0px;
+}
+
+.columnReviewContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.columnBusiness {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+  margin-right: 10px;
+}
+
+.businessName {
+  font-size: 24px;
+}
+
+.yelpLogo {
+  cursor: pointer;
+}
+
+.lockButton {
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: -10px;
+}
